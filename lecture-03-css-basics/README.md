@@ -19,6 +19,4 @@
 - Choosing the correct CSS selectors to target elements without affecting others
 
 
-## One improvement I want to do next
-- Improve layout using Flexbox
 
