@@ -1,0 +1,66 @@
+/* Typography */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header & Footer */
+header, footer {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+/* Layout */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Cards / content blocks */
+.card {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: white;
+  color: black;
+}
+
+.dark {
+  background: black;
+  color: white;
+}
