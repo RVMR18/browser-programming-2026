@@ -1,66 +1,53 @@
-/* Typography */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+body{
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background: white;
+color: black;
+padding:20px;
 }
 
-/* Header & Footer */
-header, footer {
-  background-color: #f2f2f2;
-  padding: 1rem;
+.dark{
+background:black;
+color:white;
+}
+
+/* Skills */
+
+.skills-container{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skill-card{
+border:1px solid #ccc;
+padding:10px 15px;
+border-radius:6px;
+background:#f5f5f5;
+}
+
+/* Cards */
+
+.card{
+border:1px solid #ddd;
+padding:15px;
+margin-bottom:20px;
+border-radius:6px;
 }
 
 /* Layout */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1.5rem;
+
+main{
+max-width:900px;
+margin:auto;
 }
 
-section {
-  margin-bottom: 2rem;
+nav ul{
+list-style:none;
+padding:0;
 }
 
-/* Navigation */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Cards / content blocks */
-.card {
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Responsive images */
-img {
-  max-width: 100%;
-  height: auto;
-}
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background: white;
-  color: black;
-}
-
-.dark {
-  background: black;
-  color: white;
+nav li{
+display:inline-block;
+margin-right:10px;
 }

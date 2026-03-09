@@ -1,26 +1,43 @@
-// Console message
 console.log("Portfolio page loaded");
 
-// State variable
-let isDarkMode = false;
+let isDark = false;
 
-// Contact info variable
 const contactInfo = "https://www.linkedin.com/in/madushan-rajapaksha-164563151/";
 
-// Function 1: Theme toggle
 function setTheme() {
-    isDarkMode = !isDarkMode;
-    document.body.classList.toggle("dark");
-    console.log("Theme changed. Dark mode:", isDarkMode);
+
+isDark = !isDark;
+
+document.body.classList.toggle("dark");
+
+localStorage.setItem("portfolio_theme", isDark ? "dark" : "light");
+
 }
 
-// Function 2: Contact quick action
 function showContact() {
-    alert(contactInfo);
-    console.log("Contact info shown:", contactInfo);
+
+alert(contactInfo);
+
 }
 
-// Event handlers
-document.getElementById("themeBtn").onclick = setTheme;
-document.getElementById("contactBtn").onclick = showContact;
+// Load saved theme
+window.onload = function(){
 
+const savedTheme = localStorage.getItem("portfolio_theme");
+
+if(savedTheme === "dark"){
+document.body.classList.add("dark");
+isDark = true;
+}
+
+// Last updated text
+const today = new Date().toISOString().split("T")[0];
+
+document.getElementById("lastUpdated").textContent =
+"Last updated: " + today;
+
+};
+
+document.getElementById("themeBtn").onclick = setTheme;
+
+document.getElementById("contactBtn").onclick = showContact;
