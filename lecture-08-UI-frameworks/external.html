@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>External Data Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">MR<span>.</span></h2>
+    <a href="index.html">← Back</a>
+</nav>
+
+<section class="content-section">
+    <header class="section-title">
+        <h2>External Data Demo</h2>
+    </header>
+
+    <button onclick="loadUser()">Load Data</button>
+
+    <div class="project-card" style="margin-top:20px;">
+        <p><strong>Name:</strong> <span id="name">-</span></p>
+        <p><strong>Email:</strong> <span id="email">-</span></p>
+        <p><strong>Company:</strong> <span id="company">-</span></p>
+    </div>
+</section>
+
+<script>
+async function loadUser() {
+    try {
+        const res = await fetch("https://jsonplaceholder.typicode.com/users/1");
+        const data = await res.json();
+
+        document.getElementById("name").textContent = data.name;
+        document.getElementById("email").textContent = data.email;
+        document.getElementById("company").textContent = data.company.name;
+
+    } catch (err) {
+        alert("Error loading data");
+    }
+}
+</script>
+
+</body>
+</html>

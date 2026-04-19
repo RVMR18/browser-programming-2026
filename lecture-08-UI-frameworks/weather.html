@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">MR<span>.</span></h2>
+    <a href="index.html">← Back</a>
+</nav>
+
+<section class="content-section">
+    <header class="section-title">
+        <h2>Weather App (API Integration)</h2>
+    </header>
+
+    <button class="btn-primary" id="btnKuopio">Load Kuopio Weather</button>
+
+    <div class="project-card" style="margin-top:20px;">
+        <p><strong>City:</strong> <span id="city">-</span></p>
+        <p><strong>Temperature:</strong> <span id="temperature">-</span></p>
+        <p><strong>Wind Speed:</strong> <span id="wind">-</span></p>
+    </div>
+
+    <pre id="output"></pre>
+</section>
+
+<script src="weather.js"></script>
+</body>
+</html>
